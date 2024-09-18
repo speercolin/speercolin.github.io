@@ -1,8 +1,8 @@
 # Data Science Showcase
 
 ### Education
-Bioinformatics, MS
-Computer Science, BS
+Master of Science in Bioinformatics <br />
+Bachelor of Science in Computer Science
 
 ### Projects
 **Insights into Hockey**
