@@ -3,51 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Frozen Hockey Lab</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #002B5B;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
         }
         nav {
-            background-color: #444;
+            background-color: #001F3F;
             display: flex;
             justify-content: center;
+            padding: 10px 0;
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 15px 20px;
             text-decoration: none;
             text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #39A9DB;
         }
         .container {
-            padding: 20px;
+            padding: 50px;
+        }
+        h2 {
+            border-bottom: 2px solid #002B5B;
+            padding-bottom: 10px;
+        }
+        .education, .projects {
+            margin-top: 30px;
+        }
+        .education p, .projects p {
+            margin: 10px 0;
         }
         footer {
-            background-color: #333;
+            background-color: #001F3F;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-        h2 {
-            margin-bottom: 10px;
-        }
-        p {
-            margin: 5px 0;
         }
     </style>
 </head>
@@ -64,11 +72,16 @@
 
     <div class="container">
         <h2>Education</h2>
-        <p><strong>MS Bioinformatics</strong> | University of North Carolina at Charlotte (May 2024)</p>
-        <p><strong>BS Computer Science</strong> | University of North Carolina at Charlotte (May 2023)</p>
+        <div class="education">
+            <p><strong>MS Bioinformatics</strong> | University of North Carolina at Charlotte (May 2024)</p>
+            <p><strong>BS Computer Science</strong> | University of North Carolina at Charlotte (May 2023)</p>
+        </div>
 
         <h2>Projects</h2>
-        <p><strong>Frozen Hockey Lab</strong></p>
+        <div class="projects">
+            <p><strong>Frozen Hockey Lab</strong></p>
+            <p>A data-driven exploration into hockey analytics, leveraging data science techniques to gain deeper insights into NHL games and teams.</p>
+        </div>
     </div>
 
     <footer>
