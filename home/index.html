@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #ffffff; /* Set the background color to white */
             color: #333;
         }
         header {
@@ -50,33 +50,19 @@
             text-align: center;
         }
         .hero {
-            background: url('https://example.com/hockey-rink.jpg') no-repeat center center;
-            background-size: cover;
             padding: 100px 20px;
-            color: white;
-            position: relative;
-        }
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-            z-index: 1;
-        }
-        .hero h2, .hero p {
-            position: relative;
-            z-index: 2;
-            color: white;
+            color: grey; /* Changed text color to grey */
+            text-align: center; /* Center the text */
+            background-color: #ffffff; /* White background for the hero section */
         }
         .hero h2 {
             font-size: 48px;
             font-weight: 700;
+            margin: 0;
         }
         .hero p {
             font-size: 24px;
+            margin: 10px 0;
         }
         footer {
             background-color: #001F3F;
@@ -110,11 +96,12 @@
     </nav>
 
     <div class="hero">
+        <!-- Centered and grey-colored text -->
         <h2>Data Science Meets Hockey</h2>
         <p>Bringing insights from the rink to the data lab.</p>
 
-        <!-- Updated image with new class -->
-        <img class="full-width" src="/assets/img/hockey_stop.png" alt="Hockey Stop">
+        <!-- Updated image with full width -->
+        <img class="full-width" src="/assets/img/image.jpg" alt="Hockey Data Science Image">
     </div>
 
     <div class="container">
