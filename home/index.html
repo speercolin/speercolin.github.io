@@ -3,42 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frozen Hockey Lab</title>
+    <title>My Data Science & Hockey Lab</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #002B5B;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
         }
         nav {
-            background-color: #444;
+            background-color: #001F3F;
             display: flex;
             justify-content: center;
+            padding: 10px 0;
         }
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 15px 20px;
             text-decoration: none;
             text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #39A9DB;
         }
         .container {
-            padding: 20px;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero {
+            background: url('https://example.com/hockey-rink.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 48px;
+            font-weight: 700;
         }
         footer {
-            background-color: #333;
+            background-color: #001F3F;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -56,9 +71,14 @@
         <a href="/about">About</a>
     </nav>
 
+    <div class="hero">
+        <h2>Data Science Meets Hockey</h2>
+        <p>Bringing insights from the rink to the data lab.</p>
+    </div>
+
     <div class="container">
-        <h2>Home Page</h2>
-        <p>Welcome to the home page of my website! Here, you'll find various insights and updates on my latest projects and work.</p>
+        <h2>Welcome to the Home Page!</h2>
+        <p>This is where hockey and data science collide. Explore insights, analytics, and more as we break down hockey through numbers.</p>
     </div>
 
     <footer>
