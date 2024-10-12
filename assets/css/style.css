@@ -24,8 +24,12 @@ header {
     color: #333333;
 }
 
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
 .header-right a {
-    margin-left: 20px;
     text-decoration: none;
     font-family: 'Sora', sans-serif;
     font-size: 16px;
@@ -40,7 +44,7 @@ header {
 .hero {
     padding: 100px 20px;
     text-align: center;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
 }
 
 .hero h1 {
@@ -59,9 +63,9 @@ header {
 }
 
 .hero-image {
-    width: 100%; /* Full width */
+    width: 100%;
     height: auto;
-    border-bottom: 1px solid #cccccc; /* Thin grey border on the bottom */
+    border-bottom: 1px solid #cccccc;
 }
 
 /* Latest Articles Section */
@@ -75,26 +79,21 @@ header {
     font-weight: 700;
     color: #333333;
     text-align: left;
-    margin: 50px 0;
-    padding-left: 20px; /* Adds space to the left */
+    margin-bottom: 20px;
 }
 
 .recent-articles {
-    display: flex; /* Flex layout for horizontal alignment */
-    justify-content: space-between; /* Evenly distribute space */
-    margin-top: 30px; /* Space above the recent articles section */
-    flex-wrap: wrap; /* Wrap to next line if space is not enough */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .article-card {
-    background-color: #f9f9f9; /* Light grey background for cards */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 20px; /* Padding inside cards */
-    width: calc(33.333% - 20px); /* Responsive width for three cards, including margin */
-    margin: 10px; /* Margin between cards */
-    text-align: center; /* Center text inside cards */
-    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
 }
 
 .article-image {
@@ -105,14 +104,7 @@ header {
 .article-title {
     font-family: 'Sora', sans-serif;
     font-size: 24px;
-    font-weight: 600;
-    color: #333333;
-}
-
-.article-description {
-    font-family: 'Sora', sans-serif;
-    font-size: 16px;
-    color: #555555;
+    color: #333;
 }
 
 /* Footer */
@@ -123,22 +115,9 @@ footer {
     color: #333333;
 }
 
-/* About Page Content */
+/* About Page */
 .about-content {
     padding: 50px;
     font-family: 'Sora', sans-serif;
     color: #333333;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .article-card {
-        width: calc(50% - 20px); /* Two cards per row on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .article-card {
-        width: 100%; /* One card per row on mobile devices */
-    }
 }
