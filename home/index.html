@@ -3,223 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frozen Hockey Lab</title>
-    
-    <!-- Google Fonts link for Sora font -->
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Sora', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff; /* White background */
-            color: #333333; /* Dark grey color for all text */
-        }
-        header {
-            background-color: #002B5B;
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between; /* Space between the logo and the nav */
-            align-items: center; /* Vertically align the content */
-        }
-        header img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-        header h1 {
-            font-size: 24px;
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-        nav {
-            display: flex;
-            gap: 15px; /* Adds space between buttons */
-            margin-left: auto; /* Pushes the nav to the right */
-        }
-        nav a {
-            color: white;
-            padding: 10px 15px; /* Reduced padding for better alignment */
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            background-color: #001F3F; /* Add background to buttons */
-            border-radius: 5px; /* Make buttons rounded */
-        }
-        nav a:hover {
-            background-color: #39A9DB;
-        }
-        .container {
-            padding: 50px;
-        }
-        .hero {
-            padding: 100px 20px 50px;
-            text-align: center; /* Centered text */
-            background-color: #ffffff; /* White background */
-        }
-        .hero h2 {
-            color: #333333;
-            font-family: 'Sora', sans-serif;
-            font-size: 80px;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        .hero p {
-            color: #333333;
-            font-family: 'Sora', sans-serif;
-            font-size: 24px; /* Smaller font size */
-            font-weight: 400;
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #001F3F;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        /* Updated image styling */
-        img.full-width {
-            width: 100%; /* Full width */
-            height: 600px; /* Adjust height here */
-            object-fit: cover; /* Ensures image covers the area */
-            margin: 20px 0;
-            border: none;
-            border-bottom: 2px solid #333333;
-            transition: transform 0.5s ease; /* Zoom scroll effect*/
-        }
-        .zoom-image {
-            transform: scale(1);
-            transform-origin: center top;
-        }
-
-        .latest-articles {
-            font-family: 'Sora', sans-serif;
-            font-size: 60px; /* Same size as "Data Science Meets Hockey" */
-            font-weight: 700;
-            color: #333333;
-            text-align: left;
-            margin-top: -20px; /* Reduced space above "Latest Articles" */
-            margin-bottom: 50px;
-            padding-left: 20px; /* Adds space to the left */
-        }
-
-        .recent-articles {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 0 50px;
-            flex-wrap: wrap;
-        }
-
-        .article-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: calc(33.333% - 20px);
-            margin: 10px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .article-card {
-                width: calc(50% - 20px); /* Two cards per row on smaller screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .article-card {
-                width: 100%; /* One card per row on mobile devices */
-            }
-        }
-
-        .article-image {
-            width: 100%; /* Full width for images */
-            height: 150px; /* Fixed height for uniformity */
-            object-fit: cover; /* Cover the area while preserving aspect ratio */
-            border-radius: 5px; /* Rounded corners for images */
-        }
-
-        .article-title {
-            font-size: 24px; /* Title font size */
-            color: #333; /* Dark grey color */
-            margin: 15px 0 5px; /* Space above and below the title */
-        }
-
-        .article-description {
-            font-size: 16px; /* Description font size */
-            color: #666; /* Medium grey color */
-            margin: 0; /* No margin for description */
-        }
-
-        .spacer {
-            height: 200px;
-        }
-    </style>
+    <title>Home | Frozen Hockey Lab</title>
+    <link rel="stylesheet" href="/assets/css/style.css"> <!-- Link to the shared stylesheet -->
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <div style="display: flex; align-items: center;">
-            <img src="/assets/img/logo.png" alt="Frozen Hockey Lab Logo">
-            <h1>Frozen Hockey Lab</h1>
+        <div class="header-left">
+            <img src="/assets/img/logo.png" alt="Frozen Hockey Lab Logo" class="logo">
+            <h1 class="site-title">Frozen Hockey Lab</h1>
         </div>
-        <nav>
+        <nav class="header-right">
             <a href="/home">Home</a>
             <a href="/about">About</a>
         </nav>
     </header>
 
-    <div class="hero">
-        <h2>Data Science Meets Hockey</h2>
-        <p>Bringing insights from the rink to the data lab.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Data Science Meets Hockey</h1>
+        <h2>Bringing insights from the rink to the data lab.</h2>
+        <img src="/assets/img/hockey_skate_lacing.jpg" alt="Hockey Skate Lacing" class="hero-image">
+    </section>
 
-        <img class="full-width zoom-image" src="/assets/img/hockey_skate_lacing.jpg" alt="Hockey Goal 2">
-    </div>
-
-    <!-- "Latest Articles" section -->
-    <div class="latest-articles">Latest Articles</div>
-
-    <div class="recent-articles">
-        <div class="article-card">
-            <img src="\assets\img\hockey_visualizations.png" alt="Article 1 Image" class="article-image">
-            <h3 class="article-title">Enhance Your Hockey Knowledge With Data Driven Visualizations</h3>
-            <p class="article-description">A short description of the first article goes here.</p>
+    <!-- Latest Articles Section -->
+    <section class="latest-articles-section">
+        <h2 class="latest-articles">Latest Articles</h2>
+        <div class="recent-articles">
+            <div class="article-card">
+                <img src="/assets/img/hockey_visualizations.png" alt="Article 1 Image" class="article-image">
+                <h3 class="Enhance Your Hockey Knowledge with Data-Driven Visualizations">Article Title 1</h3>
+                <p class="Hockey is not just a game of skill and speed; it is also a game of data.">A short description of the first article goes here.</p>
+            </div>
+            <div class="article-card">
+                <img src="/assets/img/hockey_puck.png" alt="Article 2 Image" class="article-image">
+                <h3 class="Unlocking NHL Data Insights with Data Science Models">Article Title 2</h3>
+                <p class="As hockey enthusiasts, we are constantly seeking new ways to delve deeper into the game.">A short description of the second article goes here.</p>
+            </div>
+            <div class="article-card">
+                <img src="/assets/img/hockey_stop_enhanced.png" alt="Article 3 Image" class="article-image">
+                <h3 class="Exploring Advanced Hockey Analytics with Machine Learning">Article Title 3</h3>
+                <p class="Are you a hockey fan looking to dive deeper into the world of advanced analytics?">A short description of the third article goes here.</p>
+            </div>
         </div>
-        <div class="article-card">
-            <img src="/assets/img/article2.jpg" alt="Article 2 Image" class="article-image">
-            <h3 class="article-title">Article Title 2</h3>
-            <p class="article-description">A short description of the second article goes here.</p>
-        </div>
-        <div class="article-card">
-            <img src="/assets/img/article3.jpg" alt="Article 3 Image" class="article-image">
-            <h3 class="article-title">Article Title 3</h3>
-            <p class="article-description">A short description of the third article goes here.</p>
-        </div>
-    </div>
-    
-    <div class="spacer"></div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Frozen Hockey Lab</p>
+        <p>© 2024 Frozen Hockey Lab</p>
     </footer>
 
-    <script>
-        // Function that handles scroll events
-        window.addEventListener('scroll', function() {
-            const zoomImage = document.querySelector('.zoom-image');
-            const scrollY = window.scrollY;
-
-            const scale = Math.max(1 - scrollY / 3000, 0.9);
-            zoomImage.style.transform = `scale(${scale})`;
-        });
-    </script>
 </body>
 </html>
