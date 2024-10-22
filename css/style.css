@@ -8,7 +8,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: #f6f6f6;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', serif;
 }
 
 h1,
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Candal', serif;
+  font-family: 'Oswald', serif;
   color: #5c5b5b;
   margin: 5px;
 }
@@ -35,12 +35,12 @@ a {
 
 .btn {
   padding: .5rem 1rem;
-  background: #006669;
+  background: #0077b3;
   color: white;
   border: 1px solid transparent;
   border-radius: .25rem;
   font-size: 1.08em;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', serif;
 }
 
 .btn-big {
@@ -50,7 +50,7 @@ a {
 
 .btn:hover {
   color: white !important;
-  background: #005255;
+  background: #003f6b;
 }
 
 .text-input {
@@ -63,7 +63,7 @@ a {
   color: #444;
   line-height: 1.5rem;
   font-size: 1.2em;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', serif;
 }
 
 .msg {
@@ -89,7 +89,7 @@ a {
 /* NAVBAR */
 
 header {
-  background: #008489;
+  background: #005f99;
   height: 66px;
 }
 
@@ -105,11 +105,11 @@ header .logo {
 
 header .logo-text {
   margin: 9px;
-  font-family: 'Candal', serif;
+  font-family: 'Oswald', serif;
 }
 
 header .logo-text span {
-  color: #05f7ff;
+  color: #FF4444;
 }
 
 header ul {
@@ -163,7 +163,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  background: #006669;
+  background: #0077b3;
   transition: 0.5s;
 }
 
@@ -176,7 +176,7 @@ header .menu-toggle {
 }
 
 .page-wrapper a:hover {
-  color: #006669;
+  color: #0077b3;
 }
 
 /* POST SLIDER */
@@ -195,7 +195,7 @@ header .menu-toggle {
   top: 50%;
   right: 30px;
   font-size: 2em;
-  color: #006669;
+  color: #0077b3;
   cursor: pointer;
 }
 
@@ -204,7 +204,7 @@ header .menu-toggle {
   top: 50%;
   left: 30px;
   font-size: 2em;
-  color: #006669;
+  color: #0077b3;
   cursor: pointer;
 }
 
@@ -299,14 +299,14 @@ header .menu-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  border: 1px solid #006669;
+  border: 1px solid #0077b3;
   background: transparent;
   border-radius: 0px;
-  color: #006669 !important;
+  color: #0077b3 !important;
 }
 
 .content .main-content .post .read-more:hover {
-  background: #006669;
+  background: #0077b3;
   color: white !important;
   transition: .25s;
 }
@@ -423,7 +423,7 @@ header .menu-toggle {
 }
 
 .footer .footer-content .about h1 span {
-  color: #05f7ff;
+  color: #FF4444;
 }
 
 .footer .footer-content .about .contact span {
@@ -480,7 +480,7 @@ header .menu-toggle {
 .footer .footer-content .contact-form .contact-btn {
   float: right;
   font-size: 1.1em;
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', serif;
 }
 
 .footer .footer-bottom {
@@ -558,7 +558,7 @@ header .menu-toggle {
 
   header ul {
     width: 100%;
-    background: #0E94A0;
+    background: #1CA3D6;
     max-height: 0px;
     overflow: hidden;
   }
@@ -579,13 +579,13 @@ header .menu-toggle {
 
   header ul li ul li a {
     padding: 10px;
-    background: #0E94A0;
+    background: #1CA3D6;
     color: white;
     padding-left: 50px;
   }
 
   header ul li ul li a:hover {
-    background: #006669;
+    background: #0077b3;
   }
 
   header ul li ul li a.logout {
